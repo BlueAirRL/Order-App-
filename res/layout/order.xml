@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/num_editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/spinner1"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/order_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/diancai_button1"
+        android:layout_alignBottom="@+id/diancai_button1"
+        android:layout_alignRight="@+id/num_editText1"
+        android:onClick="order"
+        android:text="下单" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:background="#f00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/diancai_button1"
+        android:layout_marginTop="40dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/diancai_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/num_editText1"
+        android:layout_below="@+id/num_editText1"
+        android:layout_marginTop="35dp"
+        android:onClick="diancai"
+        android:text="点菜" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/num_editText1"
+        android:text="人数:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="桌号:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
